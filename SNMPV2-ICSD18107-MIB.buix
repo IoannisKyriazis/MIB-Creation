@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<mibbuilder_doc converted_to_smiv2="false" name_prefix="gKyr" version="8">
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="1" indent="0" key="0" module_name="SNMPV2-ICSD18107-MIB" name="" no_of_childs="4294967295" oid="" type="1">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <mib_tree_componenet smi_version="1"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="1" flags="0" form_view="2" indent="1" key="0" module_name="SNMPv2-SMI" name="iso" no_of_childs="1" oid="1" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="1" flags="0" form_view="2" indent="2" key="0" module_name="SNMPv2-SMI" name="org" no_of_childs="3" oid="1.3" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="1" flags="0" form_view="2" indent="3" key="0" module_name="SNMPv2-SMI" name="dod" no_of_childs="6" oid="1.3.6" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="1" flags="0" form_view="2" indent="4" key="0" module_name="SNMPv2-SMI" name="internet" no_of_childs="1" oid="1.3.6.1" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="6" indent="5" key="0" module_name="" name="gKyrMibModule" no_of_childs="1315" oid="1.3.6.1.1315" type="12">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <module_identity_componenet contact_info="Ioannis Kyriazis&#xD;&#xA;3212018107&#xD;&#xA;icsd18107@aegean.gr" description="SMIv2 MIB Module firewall" last_modified="3/12/2022 16:26:27" organization="AEGEAN">
+      <revision_item date="3/12/2022 16:29:00" description="Initial version"/>
+    </module_identity_componenet>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="6" key="0" module_name="" name="gKyrMIB" no_of_childs="1" oid="1.3.6.1.1315.1" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="7" key="0" module_name="" name="gKyrConf" no_of_childs="1" oid="1.3.6.1.1315.1.1" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="8" key="0" module_name="" name="gKyrGroups" no_of_childs="1" oid="1.3.6.1.1315.1.1.1" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="8" indent="9" key="0" module_name="" name="gKyrObjectGroup" no_of_childs="1" oid="1.3.6.1.1315.1.1.1.1" type="14">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_group_component description="Description." reference="" status="4">
+      <object>interfaceType</object>
+      <object>kanonesProtocol</object>
+      <object>kanonesConnection</object>
+      <object>kanonesSrcIP</object>
+      <object>kanonesSrcMask</object>
+      <object>kanonesDstIP</object>
+      <object>kanonesDstMask</object>
+      <object>kanonesSrcPort</object>
+      <object>kanonesDstPort</object>
+      <object>actionAction</object>
+    </object_group_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="12" indent="9" key="0" module_name="" name="gKyrNotificationGroup" no_of_childs="2" oid="1.3.6.1.1315.1.1.1.2" type="18">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <notification_group_component description="Description." reference="" status="4">
+      <notification>gKyrNotification</notification>
+    </notification_group_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="8" key="0" module_name="" name="gKyrCompls" no_of_childs="2" oid="1.3.6.1.1315.1.1.2" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="10" indent="9" key="0" module_name="" name="gKyrCompliance" no_of_childs="1" oid="1.3.6.1.1315.1.1.2.1" type="16">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <module_compliance_component description="Description." reference="" status="4">
+      <mc_module_item name="SNMPV2-ICSD18107-MIB">
+        <mandatory_group>gKyrObjectGroup</mandatory_group>
+        <mandatory_group>gKyrNotificationGroup</mandatory_group>
+      </mc_module_item>
+    </module_compliance_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="7" key="0" module_name="" name="gKyrObjs" no_of_childs="2" oid="1.3.6.1.1315.1.2" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="8" key="0" module_name="" name="gKyrInterface" no_of_childs="1" oid="1.3.6.1.1315.1.2.1" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="9" key="0" module_name="" name="interfaceTable" no_of_childs="1" oid="1.3.6.1.1315.1.2.1.1" type="7">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="0" augments="0" defval="" defval_empty="0" defval_type="-1" description="Pinakas gia to kathe interface" implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="-1" syntax_string="SEQUENCE OF InterfaceEntry" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="10" key="0" module_name="" name="interfaceEntry" no_of_childs="1" oid="1.3.6.1.1315.1.2.1.1.1" type="8">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="0" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <index>interfaceId</index>
+      <index>kanonesRuleno</index>
+      <read_syntax syntax_id="-1" syntax_string="InterfaceEntry" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="interfaceId" no_of_childs="1" oid="1.3.6.1.1315.1.2.1.1.1.1" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="0" augments="0" defval="" defval_empty="0" defval_type="-1" description="To id tou interface" implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="0" syntax_string="INTEGER" type="1">
+        <syntax_range max="50000" min="1"/>
+      </read_syntax>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="interfaceType" no_of_childs="2" oid="1.3.6.1.1315.1.2.1.1.1.2" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="O typos tou interface" implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="0" syntax_string="INTEGER" type="2">
+        <syntax_enum label="bridge" number="1"/>
+        <syntax_enum label="lag" number="2"/>
+        <syntax_enum label="vlan" number="3"/>
+        <syntax_enum label="red" number="4"/>
+        <syntax_enum label="wirellessnetwork" number="5"/>
+        <syntax_enum label="cellularwan" number="6"/>
+        <syntax_enum label="tap" number="7"/>
+      </read_syntax>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="8" key="0" module_name="" name="gKyrFiltro" no_of_childs="2" oid="1.3.6.1.1315.1.2.2" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="9" key="0" module_name="" name="kanonesTable" no_of_childs="1" oid="1.3.6.1.1315.1.2.2.1" type="7">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="0" augments="0" defval="" defval_empty="0" defval_type="-1" description="Pinakas me olous tous kanones" implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="-1" syntax_string="SEQUENCE OF KanonesEntry" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="10" key="0" module_name="" name="kanonesEntry" no_of_childs="1" oid="1.3.6.1.1315.1.2.2.1.1" type="8">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="0" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <index>kanonesRuleno</index>
+      <read_syntax syntax_id="-1" syntax_string="KanonesEntry" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="kanonesRuleno" no_of_childs="1" oid="1.3.6.1.1315.1.2.2.1.1.1" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="0" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="0" syntax_string="INTEGER" type="1">
+        <syntax_range max="500000" min="1"/>
+      </read_syntax>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="kanonesProtocol" no_of_childs="3" oid="1.3.6.1.1315.1.2.2.1.1.3" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="0" syntax_string="INTEGER" type="2">
+        <syntax_enum label="ip" number="1"/>
+        <syntax_enum label="icmp" number="2"/>
+        <syntax_enum label="tcp" number="3"/>
+        <syntax_enum label="udp" number="4"/>
+      </read_syntax>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="kanonesConnection" no_of_childs="4" oid="1.3.6.1.1315.1.2.2.1.1.4" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="0" syntax_string="INTEGER" type="1">
+        <syntax_range max="500000" min="1"/>
+      </read_syntax>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="kanonesSrcIP" no_of_childs="5" oid="1.3.6.1.1315.1.2.2.1.1.5" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="9" syntax_string="IpAddress" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="kanonesSrcMask" no_of_childs="6" oid="1.3.6.1.1315.1.2.2.1.1.6" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="9" syntax_string="IpAddress" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="kanonesDstIP" no_of_childs="7" oid="1.3.6.1.1315.1.2.2.1.1.7" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="9" syntax_string="IpAddress" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="kanonesDstMask" no_of_childs="8" oid="1.3.6.1.1315.1.2.2.1.1.8" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="9" syntax_string="IpAddress" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="kanonesSrcPort" no_of_childs="9" oid="1.3.6.1.1315.1.2.2.1.1.9" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="0" syntax_string="INTEGER" type="1">
+        <syntax_range max="65535" min="0"/>
+      </read_syntax>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="kanonesDstPort" no_of_childs="10" oid="1.3.6.1.1315.1.2.2.1.1.10" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="0" syntax_string="INTEGER" type="1">
+        <syntax_range max="65535" min="0"/>
+      </read_syntax>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="8" key="0" module_name="" name="gKyrAction" no_of_childs="3" oid="1.3.6.1.1315.1.2.3" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="9" key="0" module_name="" name="actionTable" no_of_childs="1" oid="1.3.6.1.1315.1.2.3.1" type="7">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="0" augments="0" defval="" defval_empty="0" defval_type="-1" description="Pinakas gia to kathe action" implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="-1" syntax_string="SEQUENCE OF ActionEntry" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="10" key="0" module_name="" name="actionEntry" no_of_childs="1" oid="1.3.6.1.1315.1.2.3.1.1" type="8">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="0" augments="0" defval="" defval_empty="0" defval_type="-1" description="Description." implied="0" reference="" status="4" units="">
+      <index>interfaceId</index>
+      <index>kanonesRuleno</index>
+      <read_syntax syntax_id="-1" syntax_string="ActionEntry" type="0"/>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="3" indent="11" key="0" module_name="" name="actionAction" no_of_childs="3" oid="1.3.6.1.1315.1.2.3.1.1.3" type="9">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <object_type_component access="1" augments="0" defval="" defval_empty="0" defval_type="-1" description="To action pass h drop" implied="0" reference="" status="4" units="">
+      <read_syntax syntax_id="0" syntax_string="INTEGER" type="2">
+        <syntax_enum label="drop" number="0"/>
+        <syntax_enum label="pass" number="1"/>
+      </read_syntax>
+    </object_type_component>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="7" key="0" module_name="" name="gKyrEvents" no_of_childs="3" oid="1.3.6.1.1315.1.3" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="2" indent="8" key="0" module_name="" name="gKyrEventsV2" no_of_childs="1" oid="1.3.6.1.1315.1.3.1" type="5">
+    <revisions revision_count="0" start_revision_number="0"/>
+  </component_node>
+
+  <component_node comment_above="" comment_below="" creation_type="0" flags="0" form_view="11" indent="9" key="0" module_name="" name="gKyrNotification" no_of_childs="1" oid="1.3.6.1.1315.1.3.1.1" type="17">
+    <revisions revision_count="0" start_revision_number="0"/>
+    <notification_type_component description="Description." reference="" status="4">
+      <object>interfaceType</object>
+      <object>kanonesProtocol</object>
+      <object>kanonesSrcIP</object>
+      <object>kanonesDstIP</object>
+      <object>actionAction</object>
+    </notification_type_component>
+  </component_node>
+
+  <syntaxes/>
+
+  <revision_control last_revision_number="0" modified_after_revision="0"/>
+
+</mibbuilder_doc>
